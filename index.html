@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a1628" />
+    <title>Poker Odds — Texas Hold'em Equity Trainer</title>
+    <meta
+      name="description"
+      content="An offline Texas Hold'em equity calculator and training app for iPhone. Real-time Monte Carlo simulation. No betting, no real money — purely educational."
+    />
+    <link rel="icon" type="image/png" href="appicon.png" />
+    <link rel="apple-touch-icon" href="appicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:title" content="Poker Odds — Texas Hold'em Equity Trainer" />
+    <meta
+      property="og:description"
+      content="An offline Texas Hold'em equity calculator and training app for iPhone. Real-time Monte Carlo simulation."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="appicon.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="site-brand" href="index.html">
+          <img src="appicon.png" alt="Poker Odds icon" />
+          <span class="site-brand-title">Poker Odds</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <img class="hero-icon" src="appicon.png" alt="Poker Odds app icon" />
+        <div class="hero-text">
+          <span class="hero-meta">Educational · Offline · No betting</span>
+          <h1>Hone your equity intuition.</h1>
+          <p class="lede">
+            A Texas Hold'em equity calculator and training app for iPhone.
+            Real-time Monte Carlo simulation. Pure math, no money.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#features">See features</a>
+            <a class="btn" href="support.html">Support</a>
+            <a class="btn" href="privacy.html">Privacy</a>
+          </div>
+        </div>
+      </section>
+
+      <h2 id="features">What it does</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-title">Real-time equity</div>
+          <p class="feature-body">
+            Enter your hole cards and the visible board, and see your win
+            probability against 2–10 opponents — instantly.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="feature-title">Monte Carlo engine</div>
+          <p class="feature-body">
+            Every estimate is computed by simulating thousands of randomized
+            showdowns against the remaining deck, on-device.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="feature-title">Two practice modes</div>
+          <p class="feature-body">
+            Guess the equity of a dealt hand, or pick a hand that matches a
+            target win-rate range. Instant feedback, running score.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="feature-title">Manual opponents</div>
+          <p class="feature-body">
+            Assign specific cards to opponents to study exact spots — or leave
+            them random for general equity questions.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="feature-title">100% offline</div>
+          <p class="feature-body">
+            No internet connection required. Nothing leaves your phone. No ads,
+            no tracking, no account.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="feature-title">Adjustable precision</div>
+          <p class="feature-body">
+            Trade speed for accuracy by choosing the simulation count that fits
+            your study session.
+          </p>
+        </div>
+      </div>
+
+      <h2>How is this different from a GTO solver?</h2>
+      <p>
+        Poker Odds is an <em>equity calculator</em>, not a strategy solver. It
+        tells you <strong>how often you win at showdown</strong> — it does not
+        tell you whether to bet, call, or fold.
+      </p>
+      <p>
+        GTO ("Game Theory Optimal") apps solve for unexploitable mixed 
+		strategies using algorithms like Counterfactual Regret Minimization.
+		They take ranges, stack sizes, and bet sizings as input,
+        and output action frequencies — raise X%, call Y%, fold Z%.
+      </p>
+      <p>
+        In contrast, Poker Odds focuses on the foundation that GTO solvers
+        themselves rely on: the raw probability of winning a given hand. It
+        runs entirely on your iPhone in milliseconds, requires no learning
+        curve, and is meant to build the intuition that makes more advanced
+        study far more accessible.
+      </p>
+
+      <div class="callout">
+        <p>
+          <strong>Educational tool — no gambling.</strong>
+          Poker Odds contains no real-money play, no virtual chips, no betting,
+          no wagering, and no in-game currency. It does not connect to online
+          poker rooms or casino services. It is purely a probability calculator
+          and study tool.
+        </p>
+      </div>
+
+      <h2>Who it's for</h2>
+      <ul>
+        <li>
+          Recreational players who want to understand "what beats what" and
+          how often.
+        </li>
+        <li>
+          Students of poker working through training material and wanting to
+          test their reads.
+        </li>
+        <li>
+          Anyone curious about probability, simulation, and the math of card
+          games.
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>© 2026 Andrei Harin. All rights reserved.</div>
+        <div>
+          <a href="support.html">Support</a> ·
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

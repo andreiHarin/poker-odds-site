@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a1628" />
+    <title>Support — Poker Odds</title>
+    <meta
+      name="description"
+      content="Frequently asked questions and contact information for Poker Odds."
+    />
+    <link rel="icon" type="image/png" href="appicon.png" />
+    <link rel="apple-touch-icon" href="appicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="site-brand" href="index.html">
+          <img src="appicon.png" alt="Poker Odds icon" />
+          <span class="site-brand-title">Poker Odds</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="support.html" aria-current="page">Support</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Support</h1>
+      <p class="lede">
+        Quick answers to common questions. If you don't find what you need,
+        send an email and you'll usually get a reply within a couple of days.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+
+      <details>
+        <summary>What is Poker Odds?</summary>
+        <p>
+          Poker Odds is an offline equity calculator and training app for
+          Texas Hold'em poker. It computes how often a given hand wins at
+          showdown against 2–10 opponents using Monte Carlo simulation, and
+          includes practice modes to train your intuition.
+        </p>
+      </details>
+
+      <details>
+        <summary>Does the app involve real money or gambling?</summary>
+        <p>
+          No. Poker Odds is purely educational. It contains no real-money
+          play, no virtual chips, no betting, no wagering, and no in-game
+          currency. It does not connect to online poker rooms or casino
+          services. It is a probability calculator — the equivalent of a
+          scientific calculator for poker math.
+        </p>
+      </details>
+
+      <details>
+        <summary>How does the Monte Carlo simulation work?</summary>
+        <p>
+          Given your two hole cards and any visible community cards, the
+          remaining cards in the deck are unknown. The app deals out random
+          opponent hands and missing community cards thousands of times,
+          evaluates the best 5-of-7 hand for everyone, and counts how often
+          you would win or split the pot. Your equity is the average share of
+          the pot you'd win across all those simulations.
+        </p>
+        <p>
+          More iterations means a more precise estimate (the error shrinks
+          like 1/√N). The app defaults to a balance between speed and
+          precision, but you can adjust this.
+        </p>
+      </details>
+
+      <details>
+        <summary>How is this different from GTO solvers?</summary>
+        <p>
+          Poker Odds answers a single question: <em>how often do I win at
+          showdown?</em> It does not tell you whether to bet, call, or fold.
+        </p>
+        <p>
+          GTO solvers (PioSolver, GTO Wizard, GTO+) compute unexploitable
+          mixed strategies using Counterfactual Regret Minimization. They
+          take ranges, stack sizes, pot, and bet sizings as input, and output
+          action frequencies for an entire decision tree. They are powerful
+          but require setup and substantial compute time. Poker Odds is the
+          calculator that sits at the leaves of every solver's tree —
+          extracted into a tool simple enough to run instantly on your phone.
+        </p>
+      </details>
+
+      <details>
+        <summary>Does the app work offline?</summary>
+        <p>
+          Yes — completely. Poker Odds makes no network requests at any time.
+          You can use it in airplane mode, with no Wi-Fi, on a flight, or
+          anywhere else.
+        </p>
+      </details>
+
+      <details>
+        <summary>What data does the app collect?</summary>
+        <p>
+          None. Poker Odds collects no personal data, has no analytics, no
+          ads, no third-party SDKs, and no account system. Your hands, board
+          cards, and exercise scores never leave your device. See the
+          <a href="privacy.html">Privacy Policy</a> for the formal version.
+        </p>
+      </details>
+
+      <details>
+        <summary>Why does the app require iOS 26?</summary>
+        <p>
+          The app uses APIs introduced in iOS 26 for layout and concurrency.
+          If you're running an older iOS version, the App Store will not let
+          you install it. A future update may lower the minimum requirement
+          to broaden compatibility.
+        </p>
+      </details>
+
+      <details>
+        <summary>The equity number changes a little each time. Is that a bug?</summary>
+        <p>
+          No — it's a feature of Monte Carlo simulation. Because each run
+          uses a different random sample of cards, results vary slightly run
+          to run. The variation gets smaller the more iterations you allow.
+          For most spots, ±0.5% across runs is normal and not worth worrying
+          about.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can I assign specific cards to opponents?</summary>
+        <p>
+          Yes. In <strong>Manual</strong> mode you can assign known hole
+          cards to specific opponents and see how that shifts your equity.
+          Any opponents you don't assign will be treated as holding random
+          cards from the remaining deck.
+        </p>
+      </details>
+
+      <details>
+        <summary>How do I report a bug or request a feature?</summary>
+        <p>
+          Send an email to
+          <a href="mailto:[YOUR-EMAIL]?subject=Poker%20Odds%20feedback"
+            >[YOUR-EMAIL]</a
+          >
+          with as much detail as possible: what you did, what you expected,
+          what happened, your iPhone model, and your iOS version. Screenshots
+          help a lot.
+        </p>
+      </details>
+
+      <h2>Contact</h2>
+      <p>
+        For any other question — including privacy, App Store issues,
+        partnerships, or feedback —
+        <a href="mailto:[YOUR-EMAIL]?subject=Poker%20Odds">send an email</a>.
+      </p>
+
+      <div class="callout">
+        <p>
+          <strong>Reply time:</strong> Poker Odds is built and supported by
+          a single developer. Most messages get a reply within 1–3 business
+          days. Thanks for your patience.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>© 2026 Andrei Harin. All rights reserved.</div>
+        <div>
+          <a href="index.html">Home</a> ·
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
